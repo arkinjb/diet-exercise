@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100vh;
+}
+
+body{
+  background-color: #F5F5F5;
+}
+
+.header-container{
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.header{
+  text-align: center;
+  font-size: 5em;
+  padding: .2em;
+}
+
+.buttons-container{
+  margin: 4em 0;
+}
+
+.yes-container{
+  height: 100vh;
+}
+
+.notyet-container{
+  height: 100vh;
+}
+
+.button{
+  font-size: 4em;
+  height: 2em;
+  width: 4em;
+}
+
+#yesbutton{
+  background-color: #DC143C;
+}
+
+#notyetbutton{
+  background-color: #FFFF00;
+}

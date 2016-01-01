@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"> <!-- custom styles -->
   <title>Did I Exercise Today?</title>
 </head>
 <body>
+  <div class="row header-container">
+    <h1 class="col-md-12 header">Did I Exercise Today?</h1>
+  </div>
 
+  <div class="row">
+    <div class="buttons-container">
+      <div class="col-md-6 text-center yes-container">
+        <button id="yesbutton" class="button btn btn-default">YES</button>
+      </div>
+      <div class="col-md-6 text-center notyet-container">
+        <button id="notyetbutton" class="button btn btn-default">Not Yet</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
