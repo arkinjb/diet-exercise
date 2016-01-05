@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
-  // need ENV variable for path
-  var yesPath = "/Users/jba/wdi/diet/images/yes/";
-  var notyetPath = "/Users/jba/wdi/diet/images/notyet/";
+  var yesPath = "images/yes/";
+  var notyetPath = "images/notyet/";
 
   // ToDo: use ajax or php to get full list of image files and file count
   var yesImages = ["brofist.jpg", "linda-gif.gif", "daniel-bryan-gif.gif", "schwing.jpeg", "wooderson.jpg"];
