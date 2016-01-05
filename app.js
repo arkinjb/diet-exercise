@@ -20,13 +20,18 @@ $(document).ready(function(){
   });
 
   function showImage(src){
-    $('#imagepreview').attr('src', src); //assign img src to img in modal
-    $('#imageModal').modal('show'); //show modal
+    $("#imagepreview").attr('src', src); //assign img src to img in modal
+    $("#imageModal").modal('show'); //show modal
   }
 
   $(".dropdown-menu li").click(function(){
     var selText = $(this).text();
     $(this).parents('.dropdown').find('button[data-toggle="dropdown"]').html(selText+' <span class="caret"></span>');
   });
+
+  // open contact modal
+  $( "#contactlink" ).on("click", function(){
+    $( "#contactModal" ).modal('show');
+  })
 
 })
