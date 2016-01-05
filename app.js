@@ -5,3 +5,8 @@ $( "#yesbutton" ).on("click", function(){
 $( "#notyetbutton" ).on("click", function(){
   console.log("not yet clicked");
 });
+
+$(".dropdown-menu li").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.dropdown').find('button[data-toggle="dropdown"]').html(selText+' <span class="caret"></span>');
+});

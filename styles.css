@@ -1,37 +1,44 @@
 *{
   box-sizing: border-box;
-}
-
-html, body{
-  height: 100vh;
+  /*border: 1px green solid;*/
 }
 
 body{
   background-color: #F5F5F5;
+  margin: 0;
 }
 
 /*font styles for header and buttons*/
-h1, select.header{
+h1, .dropdown button, .dropdown-menu li{
   font-family: 'Dancing Script', Georgia, Times, serif;
+  font-size: 5em;
 }
-button{
+.buttons-container button{
   font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+  font-size: 2em;
 }
 
 /*header styles*/
 .header-container{
-  margin-top: 1em;
-}
-
-.header{
-  font-size: 5em;
-  padding: .2em;
   display: inline;
   text-align: center;
 }
 
-.form-control{
-  height: 2em;
+.dropdown button{
+  height: 2.5em;
+}
+
+.dropdown-menu{
+  background-color: #F5F5F5;
+}
+
+.dropdown-menu li{
+  font-size: 3em;
+}
+
+h1::first-letter, #dLabel::first-letter, span {
+    font-size: 200%;
+    color: #8A2BE2;
 }
 
 /*button section styles*/
@@ -40,8 +47,9 @@ button{
 }
 
 button{
-  height: 5em;
+  height: 4em;
 }
+
 #yesbutton{
   background-color: #00ff99;
   margin-bottom: 1em;

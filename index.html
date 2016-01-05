@@ -13,15 +13,22 @@
   <title>Did I Exercise Today?</title>
 </head>
 <body>
-  <div class="page-header header-container row form-inline">
+  <div class="header-container row form-inline">
     <div class="col-md-10 col-md-offset-1">
-      <h1 class="header col-md-4 col-xs-12" id="header-start">Did I</h1>
-      <select class="header form-control col-md-4 col-xs-4">
-        <option>Exercise</option>
-        <option>Eat right</option>
-        <option>Enjoy</option>
-      </select>
-      <h1 class="header col-md-4 col-xs-12" id="header-end">Today?</h1>
+      <h1 class="col-md-4 col-xs-12">Did <span>I</span></h1>
+      <!-- <h1 class="col-md-2 col-xs-12">I</h1> -->
+      <div class="btn-group dropdown col-md-4 col-xs-12">
+        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Exercise
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dLabel">
+          <li>Eat right</li>
+          <li>Enjoy</li>
+          <li>Exercise</li>
+        </ul>
+      </div>
+      <h1 class="col-md-4 col-xs-12" id="header-end">Today?</h1>
     </div>
   </div>
 
