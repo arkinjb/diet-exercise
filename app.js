@@ -1,12 +1,16 @@
-$( "#yesbutton" ).on("click", function(){
-  console.log("yes clicked");
-});
+$(document).ready(function(){
 
-$( "#notyetbutton" ).on("click", function(){
-  console.log("not yet clicked");
-});
+  $( "#yesbutton" ).on("click", function(){
+    console.log("yes clicked");
+  });
 
-$(".dropdown-menu li").click(function(){
-  var selText = $(this).text();
-  $(this).parents('.dropdown').find('button[data-toggle="dropdown"]').html(selText+' <span class="caret"></span>');
-});
+  $( "#notyetbutton" ).on("click", function(){
+    console.log("not yet clicked");
+  });
+
+  $(".dropdown-menu li").click(function(){
+    var selText = $(this).text();
+    $(this).parents('.dropdown').find('button[data-toggle="dropdown"]').html(selText+' <span class="caret"></span>');
+  });
+
+})

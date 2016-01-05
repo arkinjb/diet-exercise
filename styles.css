@@ -1,6 +1,5 @@
 *{
   box-sizing: border-box;
-  /*border: 1px green solid;*/
 }
 
 body{
@@ -11,7 +10,7 @@ body{
 /*font styles for header and buttons*/
 h1, .dropdown button, .dropdown-menu li{
   font-family: 'Dancing Script', Georgia, Times, serif;
-  font-size: 5em;
+  font-size: 4em;
 }
 .buttons-container button{
   font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
@@ -38,7 +37,7 @@ h1, .dropdown button, .dropdown-menu li{
 
 h1::first-letter, #dLabel::first-letter, span {
     font-size: 200%;
-    color: #8A2BE2;
+    color: blue;
 }
 
 /*button section styles*/
@@ -47,7 +46,7 @@ h1::first-letter, #dLabel::first-letter, span {
 }
 
 button{
-  height: 4em;
+  height: 2.5em;
 }
 
 #yesbutton{
