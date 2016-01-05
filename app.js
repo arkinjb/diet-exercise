@@ -1,22 +1,28 @@
 $(document).ready(function(){
 
+  // need ENV variable for path
   var yesPath = "/Users/jba/wdi/diet/images/yes/";
   var notyetPath = "/Users/jba/wdi/diet/images/notyet/";
 
+  // ToDo: use ajax or php to get full list of image files and file count
   var yesImages = ["brofist.jpg", "linda-gif.gif", "daniel-bryan-gif.gif", "schwing.jpeg", "wooderson.jpg"];
-  var notyetImages = ["legday.jpg", "quickly.jpg", "now-later,jpg", "stop-excuses.png", "no-better-time.png"];
+  var notyetImages = ["legday.jpg", "quickly.jpg", "now-later.jpg", "stop-excuses.png", "no-better-time.png"];
 
+  // ToDo: combine button click events, determine path based on button clicked
   $( "#yesbutton" ).on("click", function(){
-    console.log("yes clicked");
-    var src = yesImages[Math.floor(Math.random()*yesImages.length)];
-    $( "#newimage" ).append('<img src="' + yesPath + src + '">');
+    var src = yesPath + yesImages[Math.floor(Math.random()*yesImages.length)];
+    showImage(src);
   });
 
   $( "#notyetbutton" ).on("click", function(){
-    console.log("not yet clicked");
-    var src = notyetImages[Math.floor(Math.random()*notyetImages.length)];
-    $( "#newimage" ).append('<img src="' + notyetPath + src + '">');
+    var src = notyetPath + notyetImages[Math.floor(Math.random()*notyetImages.length)];
+    showImage(src);
   });
+
+  function showImage(src){
+    $('#imagepreview').attr('src', src); //assign img src to img in modal
+    $('#imageModal').modal('show'); //show modal
+  }
 
   $(".dropdown-menu li").click(function(){
     var selText = $(this).text();
